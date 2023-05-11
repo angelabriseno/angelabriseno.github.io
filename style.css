@@ -1,0 +1,456 @@
+/*################### navegacion #########################*/
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    width: auto;
+    background-color: #1f1f1f;
+    padding: 10px;
+}
+
+.caja{
+    position: relative;
+    background-color: #1f1f1f;
+    margin: 0 auto;
+
+}
+
+.caja h1{
+    filter: invert(1);
+}
+
+nav{
+    position: absolute;
+    top: 200px;
+    right: 10px;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 20px;
+
+}
+
+
+nav a{
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
+
+}
+
+.swiper-container {
+    width: 100%;
+    height: 50%;
+    max-height: 500px;
+    display: flex;
+    overflow: hidden;
+    flex-wrap: nowrap;
+  }
+  
+  .swiper-slide {
+    flex-shrink: 0;
+    width: 100%;
+    height: auto; 
+    position: relative;
+  }
+  
+  .swiper-slide img {
+    max-height: 100%;
+    object-fit: cover;
+  }
+  
+
+/*################### cajas de productos #########################*/
+.productos2{
+    width: auto;
+    margin: 5% auto;
+    padding: 5% 0;
+    
+}
+
+
+
+.productos2 li{
+    display: inline-block;
+    width: 28% ;
+    text-align: center;
+    vertical-align: top;
+    margin: 0 1.5% 2.5% 1.5%;
+    padding: 2.5% 1%;
+    position: relative;
+    box-sizing: border-box; /*el borde de cada item sera el limite del espacio definido*/
+     /*ahora los bordes van a ser internos*/
+    border: 2px solid black;
+    /*border-color: black;
+    border-width: 2px;
+    border-style: solid; lo mismo separado*/
+    border-radius: 3%;
+    /*border-top
+      border-down
+      border-right
+      border left*/
+}
+
+.productos2 h2{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.productos2 img {
+    width: 100%; /* para asegurarse de que la imagen ocupe todo el ancho disponible en su contenedor */
+    height: 100%; /* para asegurarse de que la imagen ocupe toda la altura disponible en su contenedor */
+    object-fit: cover; /* para ajustar la imagen a las dimensiones del contenedor, sin distorsionar la relación de aspecto */
+}
+
+.productos2-des{
+    font-size: auto;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.productos2-p{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.productos2 li:hover{
+    border-color: #c78c19;
+}
+
+.productos2 li:hover h2{
+    font-size: 28px;
+}
+
+.productos2 li:active{
+    border-color: #088c19;
+}
+
+
+footer{
+    width: auto;
+    text-align: center;
+    background-image: url(imagenes/bg.jpg);
+    padding: 10px;
+}
+
+.copyright{
+
+    color: white;
+    font-size: 13px;
+    margin: 20px;
+}
+
+footer img{
+    width: 90px;
+    height: 130px;
+}
+/*###########################################*/
+main {
+    width: 100%;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label, form legend {
+    display:block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+
+.padrones input, .padrones textarea{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox{
+    margin: 40px 0 10px 0;
+}
+
+
+
+.enviar{
+ width: 40%;
+ padding: 15px 0;
+ font-size: 18px;
+ font-weight: bold;
+ color: white;
+ background-color: orange;
+ border: none;
+ border-radius: 5px;
+ transition: 1s all; /*permite definir el tiempo que tarda 
+ en ejecutarse por completo el hover*/
+ cursor: pointer;
+}
+
+.enviar:hover{
+  background: darkorange;
+  transform: scale(1.05) /*rotate(360deg)*/; /*css ejecuta la ultima propiedad similar
+  por eso se debe colocar en una misma linea*/
+}
+
+
+table{
+    margin: 40px 40px;
+}
+
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid #000000;
+    padding: 8px 10px;
+}
+
+
+/*#################css para nuestra home##############*/
+
+.banner{
+    width: 100%;
+}
+
+/* SELECTORES AVANZADOS 
+
+>HIJO
++ HERMANO
+
+#padre > primer hijo
+main >p{
+    background: red;
+}
+#aplica al primer elemento (parrafo) que esta despues de una imagen
+img + p{
+    background: yellow;
+}
+#aplica a todos los parafos que estan despues de una imagen
+img ~ p{
+    background: green;
+}
+
+#aplica naranga a todo menos a el elemento id mision
+.principal p:not(#mision){
+    background: orange;
+}
+
+*/
+
+.principal{
+    padding: 3em 0;
+    background: #fefefe;
+}
+
+
+
+
+/*musica agregada embed de spotify*/
+.music {
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .music iframe {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    transform: scale(0.6);
+    margin: -1em 0 -3em;
+  }
+
+  .music iframe:hover {
+    display: inline-block;
+    width: 50%;
+    transform: scale(0.7);
+  }
+
+  /*texto inical*/
+
+.tituloprinc{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left; /*todo proceso aplicado para ajuste
+    se elimina como el caso de la imagen
+                  clabe  opacidad*/
+    color: rgb(218,0,0,    0.3);
+    /*text-shadow:2px 2px 10px red;*/
+    
+
+}
+
+.tituloprinc::first-letter{
+  font-weight: bold;
+}
+
+.tituloprinc::before{
+    content: "[";
+}
+
+.tituloprinc::after{
+    content: "]";
+}
+
+p::first-line{
+    font-style: italic;
+}
+
+.utensilios{
+    width: calc(12%);
+    float: left; /*permite colocar las imagenes como
+    ajustar al texto de word, osea el texto
+    al rededor de la imagen*/
+    padding-left: 1%;
+    margin: 0 20px 20px 0; /*
+            n  >    u   <  */
+
+}
+.principal p{
+    margin: 0 0 1em;
+
+}
+
+.principal strong{
+    font-weight: bold;
+
+}
+
+.principal em{
+    font-style: italic;
+}
+
+
+.mapa{
+    padding: 3em 0;
+    text-align: center;
+    background: linear-gradient(#fefefe, #888888);
+}
+
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+    
+}
+
+.mapa iframe{
+    border-radius: 12px; 
+    display: inline-block;
+}
+
+
+
+  /* diferenciales lista y ajuste de imagenes*/
+
+  .diferenciales{
+    padding: 3em 0;
+    background: linear-gradient(#888888, #1f1f1f);
+  }
+
+  .diferenciales h3{
+    color: white;
+  }
+.contenido-diferenciales{
+    width: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+	align-items: center;
+  }
+
+.lista-diferenciales{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+  
+}
+
+.item{
+    font-size: 2.5vw;
+    color: whitesmoke;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.item::before{
+    content: "⋆ ";
+}
+
+.item:first-child{
+    font-weight: bold;
+}
+
+
+/*.items:first-child{font-style: italic}
+.items:nth-child(4){font-weight: bold}
+.items:last-child{font-style: italic}*/
+
+  .imagen-diferenciales{
+    width: 40%;
+    height: 27%;
+    opacity: 50%;
+    border-radius: 12px;
+    margin-left: 1em;
+    /*desde centro up/down(-)   der/izq(-)  difuminasion   expansion   color*/
+    box-shadow:       10px      10px        30px          15px     #000000,
+     -10px -10px rgb(102, 76, 76),
+    -20px -20px rgb(70, 19, 19, 0.5);
+}
+
+.imagen-diferenciales:hover{
+
+    opacity: 80%;
+    transition: 400;
+
+}
+
+
+/**/
+
+.youtube{
+    background-color: #1f1f1f;
+    text-align: center;
+}
+
+.youtube iframe{
+    width: 560px;
+    display: inline-block;
+    margin: 1em auto; 
+    border-radius: 12px;
+}
+
+/*
+@media screen and (max-width:480px){
+    .music{
+        background: red;
+    }
+}
+
+*/
